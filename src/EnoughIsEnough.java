@@ -32,9 +32,17 @@ public class EnoughIsEnough {
     public static void main(String[] args) {
 
         int[] testArray = deleteNth(new int[]{20, 37, 20, 21}, 1);
-
         for (int i = 0; i < testArray.length; i++) {
-            System.out.println(testArray[i]);
+            System.out.print(testArray[i]);
+            System.out.print(" ");
         }
+        System.out.println("");
+
+        int[] testArray2 = deleteNth(new int[]{ 1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1 }, 3);
+        for (int i = 0; i < testArray2.length; i++) {
+            System.out.print(testArray2[i]);
+            System.out.print(" ");
+        }
+        System.out.println("");
     }
 }
