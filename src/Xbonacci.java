@@ -1,5 +1,7 @@
+import java.util.Arrays;
+
 public class Xbonacci {
-    public double[] tribonacci(double[] s, int n) {
+    public static double[] tribonacci(double[] s, int n) {
         double[] mybonnacci = new double[n];
         if (n == 0) {
 
@@ -12,5 +14,16 @@ public class Xbonacci {
             }
         }
         return mybonnacci;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(tribonacci(new double[]{1, 1, 1}, 10)));
+        System.out.println(Arrays.toString(tribonacci(new double[]{0, 0, 1}, 10)));
+        System.out.println(Arrays.toString(tribonacci(new double[]{0, 1, 1}, 10)));
+        System.out.println(Arrays.toString(tribonacci(new double[]{0, 1, 1}, 0)));
+        System.out.println(Arrays.toString(tribonacci(new double[]{0, 1, 1}, 1)));
+        System.out.println(Arrays.toString(tribonacci(new double[]{0, 1, 1}, 2)));
+        System.out.println(Arrays.toString(tribonacci(new double[]{0, 1, 1}, 3)));
+        System.out.println(Arrays.toString(tribonacci(new double[]{0, 0.5, 1}, 4)));
     }
 }
