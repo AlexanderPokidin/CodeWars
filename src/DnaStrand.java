@@ -28,5 +28,7 @@ public class DnaStrand {
 
     public static void main(String[] args) {
         System.out.println(makeComplement("TTTT"));
+        System.out.println(makeComplement("ATTGC"));
+        System.out.println(makeComplement("GTAT"));
     }
 }
