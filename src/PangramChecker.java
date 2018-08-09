@@ -1,19 +1,26 @@
 public class PangramChecker {
     public static boolean check(String sentence) {
-        boolean isTrue = true;
-        String cleanString = sentence.toLowerCase().replaceAll("[^a-z]", "");
 
-        for (int j = 0; j < 26; j++) {
-            char tmp = (char) ('a' + j);
-            String tmpStr = String.valueOf(tmp);
-            {
-                if (!cleanString.contains(tmpStr)) {
-                    isTrue = false;
-                    break;
-                }
+        for (char j = 'a'; j <= 'z'; j++) {
+            if (!sentence.toLowerCase().contains("" + j)) {
+                return false;
             }
         }
-        return isTrue;
+        return true;
+
+//        boolean isTrue = true;
+//        String cleanString = sentence.toLowerCase().replaceAll("[^a-z]", "");
+//        for (int j = 0; j < 26; j++) {
+//            char tmp = (char) ('a' + j);
+//            String tmpStr = String.valueOf(tmp);
+//            {
+//                if (!cleanString.contains(tmpStr)) {
+//                    isTrue = false;
+//                    break;
+//                }
+//            }
+//        }
+//        return isTrue;
     }
 
     public static void main(String[] args) {
