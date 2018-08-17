@@ -4,7 +4,7 @@ public class EnoughIsEnough {
 
     public static int[] deleteNth(int[] elements, int maxOccurrences) {
 
-        if (elements.length == 0){
+        if (elements.length == 0) {
             return elements;
         } else {
             ArrayList<Integer> result = new ArrayList<>();
@@ -44,14 +44,14 @@ public class EnoughIsEnough {
         }
         System.out.println("");
 
-        int[] testArray2 = deleteNth(new int[]{ 1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1 }, 3);
+        int[] testArray2 = deleteNth(new int[]{1, 2, 3, 1, 1, 2, 1, 2, 3, 3, 2, 4, 5, 3, 1}, 3);
         for (int i = 0; i < testArray2.length; i++) {
             System.out.print(testArray2[i]);
             System.out.print(" ");
         }
         System.out.println("");
 
-        int[] testArray3 = deleteNth(new int[]{ }, 5);
+        int[] testArray3 = deleteNth(new int[]{}, 5);
         for (int i = 0; i < testArray3.length; i++) {
             System.out.print(testArray3[i]);
             System.out.print(" ");

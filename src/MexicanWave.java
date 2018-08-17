@@ -22,7 +22,7 @@ public class MexicanWave {
                     myStr = str.substring(i, i + 1).toUpperCase() + str.substring(i + 1);
                 }
                 result[count] = myStr;
-                count ++;
+                count++;
             }
         }
         return result;
