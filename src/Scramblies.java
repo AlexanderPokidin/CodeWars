@@ -1,7 +1,4 @@
 public class Scramblies {
-
-    //TODO Задача не решена. Отсутсвет проверка на повторяющиеся буквы
-    // https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/java
     public static boolean scramble(String str1, String str2) {
         if (str1.length() < str2.length()) {
             return false;
